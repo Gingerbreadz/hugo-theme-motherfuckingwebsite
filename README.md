@@ -6,6 +6,8 @@ Live demo: [anatolelefort.net](https://anatolelefort.net)
 
 Here is a short digest of local changes:
 
+- explicit 404 error message.
+
 ------
 
 # I've archived this repository because I no longer use `hugo`.
