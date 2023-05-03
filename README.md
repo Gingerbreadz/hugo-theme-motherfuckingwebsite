@@ -6,6 +6,7 @@ Live demo: [anatolelefort.net](https://anatolelefort.net)
 
 Here is a short digest of local changes:
 
+- dual column navbar.
 - minor styling changes to personal taste.
 - explicit 404 error message.
 

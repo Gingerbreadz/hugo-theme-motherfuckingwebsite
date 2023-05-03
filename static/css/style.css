@@ -105,9 +105,19 @@ blockquote {
 }
 
 /* top nav */
-.nav {
+.nav-left {
+  text-align: left;
+}
+
+.nav-right {
   text-align: right;
+}
+
+.nav {
   font-size: 16px;
+
+  display: flex;
+  justify-content: space-between;
 }
 
 .nav a {
