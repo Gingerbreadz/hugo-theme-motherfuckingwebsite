@@ -6,6 +6,8 @@ Live demo: [anatolelefort.net](https://anatolelefort.net)
 
 Here is a short digest of local changes:
 
+- “profile-type” landing page, instead of blog index.
+- index page with sidebar (logo, title, social links and custom text blocks).
 - dual column navbar.
 - minor styling changes to personal taste.
 - explicit 404 error message.
