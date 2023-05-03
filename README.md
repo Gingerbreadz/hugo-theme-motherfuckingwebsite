@@ -8,7 +8,8 @@ Here is a short digest of local changes:
 
 - “profile-type” landing page, instead of blog index.
 - index page with sidebar (logo, title, social links and custom text blocks).
-- dual column navbar.
+- table of contents (opt in/out) for articles (inline) or index page (inline or center navbar).
+- tri-column navbar.
 - user-defined partial head layouts (favicon.html, head\_includes.html).
 - minor styling changes to personal taste.
 - explicit 404 error message.

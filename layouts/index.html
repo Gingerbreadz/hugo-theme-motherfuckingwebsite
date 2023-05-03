@@ -44,6 +44,18 @@
         <hr>
         <p><b>News:</b></br>{{ .Params.news | markdownify }}</p>
         <p><b>Research Interests:</b></br><em>{{ .Params.interests | markdownify }}</em></p>
+
+        {{ if (and .Params.toc .Params.toc_inline) }}
+          <!--
+          <aside style="float: right; padding-left: 30px; padding-bottom: 30px; width: 30%;">
+          </aside>
+          -->
+            <hr>
+            <h2 style="margin-top: 0px;">Contents</h2>
+            {{ .TableOfContents }}
+            <hr>
+        {{ end }}
+
       </div>
 
     </div>

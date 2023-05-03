@@ -24,6 +24,12 @@
     <a href="/">{{ .Site.Params.Author }}'s Frontpage</a>
   </div>
 
+  {{ if (and .IsHome (and .Params.toc (not .Params.toc_inline))) }}
+    <div class="nav-center hidden-mobile">
+      {{ .TableOfContents }}
+    </div>
+  {{ end }}
+
   <div class="nav-right">
     <a href="/posts">Blog</a>
   </div>

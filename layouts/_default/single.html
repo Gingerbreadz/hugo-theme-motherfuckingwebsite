@@ -18,6 +18,12 @@
   <hr />
 {{ end }}
 
+{{ if .Params.toc }}
+  <h2 class="toc-title">Contents</h2>
+    {{ .TableOfContents }}
+  <hr>
+{{ end }}
+
 {{ .Content }}
 
 {{ partial "footer.html" . }}
