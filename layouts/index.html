@@ -22,8 +22,12 @@
     </div>
 
     <div class="sidebar-news hidden-desktop">
+      {{ if isset .Params "news" }}
       <p><b>News:</b></br>{{ .Params.news | markdownify }}</p>
+      {{ end }}
+      {{ if isset .Params "interests" }}
       <p><b>Research Interests:</b></br><em>{{ .Params.interests | markdownify }}</em></p>
+      {{ end }}
       <p><b>Last content update:</b><br><em>{{ .Params.last_update }}</em></p>
       <hr>
     </div>
@@ -42,8 +46,12 @@
 
       <div class="hidden-mobile">
         <hr>
+        {{ if isset .Params "news" }}
         <p><b>News:</b></br>{{ .Params.news | markdownify }}</p>
+        {{ end }}
+        {{ if isset .Params "interests" }}
         <p><b>Research Interests:</b></br><em>{{ .Params.interests | markdownify }}</em></p>
+        {{ end }}
 
         {{ if (and .Params.toc .Params.toc_inline) }}
           <!--
