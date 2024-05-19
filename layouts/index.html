@@ -25,6 +25,9 @@
       {{ if isset .Params "news" }}
       <p><b>News:</b></br>{{ .Params.news | markdownify }}</p>
       {{ end }}
+      {{ if isset .Params "about" }}
+      <p><b>About me:</b></br>{{ .Params.about | markdownify }}</p>
+      {{ end }}
       {{ if isset .Params "interests" }}
       <p><b>Research Interests:</b></br><em>{{ .Params.interests | markdownify }}</em></p>
       {{ end }}
@@ -48,6 +51,9 @@
         <hr>
         {{ if isset .Params "news" }}
         <p><b>News:</b></br>{{ .Params.news | markdownify }}</p>
+        {{ end }}
+        {{ if isset .Params "about" }}
+        <p><b>About me:</b></br>{{ .Params.about | markdownify }}</p>
         {{ end }}
         {{ if isset .Params "interests" }}
         <p><b>Research Interests:</b></br><em>{{ .Params.interests | markdownify }}</em></p>
