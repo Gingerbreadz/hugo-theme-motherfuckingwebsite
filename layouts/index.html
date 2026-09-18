@@ -69,10 +69,16 @@
             {{ .TableOfContents }}
             <hr>
         {{ end }}
-
       </div>
 
     </div>
+
+    {{ .Params.bio | markdownify }}
+
+  </div>
+</div>
+
+    <main class="content">
 
     {{ .Content }}
 
@@ -84,7 +90,6 @@
       <hr>
       <p><b>Note:</b><br><em>{{ .Params.note | markdownify }}</em></p>
     </div>
-  </div>
-</div>
+    </main>
 
 {{ partial "footer.html" . }}
